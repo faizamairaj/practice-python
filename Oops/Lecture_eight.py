@@ -47,7 +47,7 @@
 
 # s1 = Student("meerub", 96)
 # print(s1.name, s1.marks)
-
+     
 #############################################################################################
 # constructor
 # class  Student: # class
