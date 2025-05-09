@@ -61,6 +61,7 @@
 # s1 = Student("meerub", 96) # class of object
 # s1.welcome()
 
+
 #############################################################################################
 
 
@@ -105,7 +106,7 @@
 
 #############################################################################################
       
-# Abstraction:
+# Abstraction: # chuppi hui chez (clear nhi hai)
 # class Car:
 #     def __init__(self):
 #         self.acc = False
@@ -156,7 +157,6 @@
 
 #############################################################################################
 
-
 # delete method
 
 # class Student:
@@ -172,7 +172,11 @@
                  
 #############################################################################################
 
-# private (like) attrubutes
+# private (like) attributes
+ # agar hum underscore se kise class ko private bna den
+#  tu wo sirf class k internal functions per he work karen gai 
+# function k bahar access nhi karen gai.
+
 # class Account:
 #     def __init__(self, acc_no, acc_pass):
 #         self.acc_no = acc_no
@@ -183,13 +187,13 @@
 
 # acc1 = Account("12345", 'abcd')
 # print(acc1.acc_no)
-# print(acc1.__acc_pass) # agr humai kise value ko show naa karwana ho tu (undersope) ka used karte hai __
+# print(acc1.__acc_pass) # agr humai kise value ko show naa karwana ho tu (undersore) ka used karte hai __
 
 #############################################################################################
 
 
 # class Person:
-#     __name = "anonymous" # ya method private is lia hai kyu k humne yaha per uderscope ko used kia hai
+#     __name = "anonymous" # ya method private is lia hai kyu k humne yaha per uderscore ko used kia hai
 
 # p1 = Person()
 # print(p1.__name) # AttributeError: 'Person' object has no attribute '__name'
@@ -211,7 +215,6 @@
 #############################################################################################
 
 
-
 # class Person:
 #     __name = "anonymous"
 
@@ -227,7 +230,7 @@
 
 #############################################################################################
 
-# Inheritance:
+# single Inheritance:
 # class Car:
 #     @staticmethod
 #     def start():
@@ -292,7 +295,7 @@
 
 ##########################################################################################
 
-# super() method:
+# super() method: # super() method is used to access method of the parent class.
 
 # class Car:
 #     def __init__(self, type):
@@ -310,15 +313,16 @@
 #     def __init__(self,name, type):
 #         super().__init__(type)
 #         self.name = name
-#         super().start()
+#         super().start() # car started...
 
 # car1 = ToyotaCar("prius", "electric")
-# print(car1.type)
+# print(car1.type) # electric
+
     
 
 ##########################################################################################
 
-# class method: ( class method mai hum self ki jaga class used karen gen.)
+# class method: (class method mai hum self ki jaga class used karen gen.)
 # class Person:
 #     name = "anonymous"
 
@@ -442,7 +446,7 @@
 #         self.radius = radius
 
 #     def area(self): # area hota hai  πr²
-#         return (22/7) * self.radius ** 2  # 22/7 =  3.142857
+#         return (22/7) * self.radius ** 2    # 22/7 =  3.142857
     
 #     def perimeter(self): # Formula hai: 2πr
 #         return 2 * (22/7) * self.radius  # 21*21 = 441 * 22/7 = 1,386
